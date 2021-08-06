@@ -10,6 +10,15 @@ $black: #343530;
 
   .notepad-area {
     background-color: $yellow;
+
+    background-image: linear-gradient(
+        0deg,
+        transparent 5em,
+        $yellow 0,
+        transparent 5.1em
+      ),
+      linear-gradient($black 1px, transparent 0);
+    background-size: 100% 2em;
     resize: none;
     height: 95%;
     width: 100%;
