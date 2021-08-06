@@ -1,0 +1,40 @@
+$yellow: #e9f0c5;
+$black: #343530;
+
+.notepad {
+  background-color: $yellow;
+  border-radius: 6px;
+  border: 1px solid $black;
+  padding: 15px;
+  height: 560px;
+
+  .notepad-area {
+    background-color: $yellow;
+    resize: none;
+    height: 95%;
+    width: 100%;
+
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn {
+      background-color: $yellow;
+      color: $black;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
